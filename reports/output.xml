@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.5 on darwin)" generated="20230611 19:33:31.935" rpa="false" schemaversion="3">
+<suite id="s1" name="Tc-01 Add Numbers Ios" source="/Users/calibraint/Downloads/robotframework_appium/test_suite/e2e/ios/tc-01_add_numbers_ios.robot">
+<test id="s1-t1" name="TC-01 Addition Two Numbers" line="10">
+<kw name="Open Calculator-iOS" library="core_ios" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${port}</arg>
+<arg>platformName=iOS</arg>
+<arg>platformVersion=${${Tester}.ios_device_version}</arg>
+<arg>appium:deviceName=${${Tester}.ios_device_name}</arg>
+<arg>automationName=XCUITest</arg>
+<arg>udid=${${Tester}.ios_udid}</arg>
+<arg>bundleId=${${env}.bundle_id}</arg>
+<arg>xcodeOrgId=GLA8T96QJT</arg>
+<arg>xcodeSigningId=iPhone Developer</arg>
+<arg>newCommandTimeout=20000</arg>
+<arg>setWebContentsDebuggingEnabled=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230611 19:33:32.301" endtime="20230611 19:33:33.996"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:32.301" endtime="20230611 19:33:33.996"/>
+</kw>
+<kw name="Add 9 &amp; 10" library="key_add_number_ios">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${9_button}</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230611 19:33:33.997" endtime="20230611 19:33:34.102"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${9_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:34.105" level="INFO">Clicking element 'accessibility_id=9'.</msg>
+<status status="PASS" starttime="20230611 19:33:34.103" endtime="20230611 19:33:34.872"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${add_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:34.874" level="INFO">Clicking element 'accessibility_id=add'.</msg>
+<status status="PASS" starttime="20230611 19:33:34.872" endtime="20230611 19:33:35.656"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${8_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:35.658" level="INFO">Clicking element 'accessibility_id=8'.</msg>
+<status status="PASS" starttime="20230611 19:33:35.656" endtime="20230611 19:33:36.442"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${equal_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:36.444" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<status status="PASS" starttime="20230611 19:33:36.442" endtime="20230611 19:33:36.719"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:33.996" endtime="20230611 19:33:36.720"/>
+</kw>
+<kw name="Clear Button" library="key_add_number_ios">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${clear_button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230611 19:33:36.720" endtime="20230611 19:33:36.823"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${clear_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:36.826" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<status status="PASS" starttime="20230611 19:33:36.823" endtime="20230611 19:33:37.844"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:36.720" endtime="20230611 19:33:37.844"/>
+</kw>
+<kw name="Min 12 &amp; 3" library="key_add_number_ios">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${1_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:37.848" level="INFO">Clicking element 'accessibility_id=1'.</msg>
+<status status="PASS" starttime="20230611 19:33:37.845" endtime="20230611 19:33:38.610"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${2_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:38.612" level="INFO">Clicking element 'accessibility_id=2'.</msg>
+<status status="PASS" starttime="20230611 19:33:38.610" endtime="20230611 19:33:39.398"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${min_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:39.400" level="INFO">Clicking element 'accessibility_id=subtract'.</msg>
+<status status="PASS" starttime="20230611 19:33:39.398" endtime="20230611 19:33:40.197"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${3_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:40.199" level="INFO">Clicking element 'accessibility_id=3'.</msg>
+<status status="PASS" starttime="20230611 19:33:40.197" endtime="20230611 19:33:40.998"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${equal_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230611 19:33:41.001" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<status status="PASS" starttime="20230611 19:33:40.999" endtime="20230611 19:33:41.768"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:37.844" endtime="20230611 19:33:41.768"/>
+</kw>
+<kw name="Exit App" library="core_ios" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230611 19:33:41.769" endtime="20230611 19:33:42.867"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:41.768" endtime="20230611 19:33:42.867"/>
+</kw>
+<status status="PASS" starttime="20230611 19:33:32.301" endtime="20230611 19:33:42.868"/>
+</test>
+<status status="PASS" starttime="20230611 19:33:31.937" endtime="20230611 19:33:42.868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc-01 Add Numbers Ios">Tc-01 Add Numbers Ios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
